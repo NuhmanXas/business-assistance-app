@@ -7,7 +7,7 @@
     "icon": "./assets/images/icon.png",
     "scheme": "businessassistanceapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": false,
+    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
@@ -16,14 +16,9 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "permissions": [
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE",
-        "android.permission.READ_MEDIA_IMAGES",
-        "android.permission.READ_MEDIA_VIDEO"
-      ],
-      "package": "com.xasgroup.mobile.businessassistanceapp"
+      "package": "com.nuhmanxas.businessassistanceapp",
+      "versionCode": 1,
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "bundler": "metro",
@@ -32,13 +27,6 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-media-library",
-        {
-          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
-          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos."
-        }
-      ],
       [
         "expo-splash-screen",
         {
@@ -57,7 +45,6 @@
       "eas": {
         "projectId": "947cdb11-d2a8-4a71-9dac-b57a99149aec"
       }
-    },
-    "owner": "xasgroup.mobile"
+    }
   }
 }
